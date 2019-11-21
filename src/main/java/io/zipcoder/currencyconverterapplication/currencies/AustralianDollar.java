@@ -5,9 +5,8 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class AustralianDollar implements ConvertableCurrency {
 
-    CurrencyType type = CurrencyType.AUSTRALIAN_DOLLAR;
     @Override
     public CurrencyType getType() {
-        return type;
+        return CurrencyType.AUSTRALIAN_DOLLAR;
     }
 }
