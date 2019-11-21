@@ -10,8 +10,8 @@ public enum CurrencyType {
     RINGGIT(8.94),
     RUPEE(136.64),
     SINGAPORE_DOLLAR(1.86),
-    US_DOLLAR(2.0),
-    UNIVERSAL_CURRENCY(1.0),
+    US_DOLLAR(2.00),
+    UNIVERSAL_CURRENCY(1.00),
     YEN(231.68);
 
     private final double rate;
@@ -25,6 +25,7 @@ public enum CurrencyType {
     }
 
     public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
-        return null;
+
+        return currency.getType();
     }
 }
