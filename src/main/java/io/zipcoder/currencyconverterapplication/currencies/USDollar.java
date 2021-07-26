@@ -11,11 +11,13 @@ public class USDollar extends CurrencyConverter implements ConvertableCurrency {
     @Override
     public Double convert(CurrencyType currencyType) {
         Double universalAmount = currencyType.getRate() / CurrencyType.US_DOLLAR.getRate();
-            return universalAmount;
+        return universalAmount;
     }
 
     @Override
     public CurrencyType getType() {
         return result;
     }
+
+
 }
